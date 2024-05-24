@@ -6,6 +6,8 @@ services:
               uid: 1000 
           dockerfile: Dockerfile 
         container_name: app
+        extra_hosts:
+          - "host.docker.internal:host-gateway"
         environment:
           - DB_HOST=db
           - DB_DATABASE=laravel
@@ -56,7 +58,7 @@ services:
         restart: always
         tty: true
         ports:
-          - "3308:3306"
+          - "33006:3306"
         volumes:
           - ./.docker/dbdata:/var/lib/mysql
         environment:
@@ -66,14 +68,9 @@ services:
           - app-network-01
 
     redis:
-        image: redis:alpine
-        volumes:
-          - ./.docker/volumes/redis:/data
-        container_name: redis
-        ports:
-          - 6379:6379
-        networks:
-          - app-network-01
+        image: redis:latest
+        networks: 
+            - app-network-01
 
 networks:
     app-network-01:
