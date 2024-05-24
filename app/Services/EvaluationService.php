@@ -2,11 +2,12 @@
 
 namespace App\Services;
 
-use App\Services\Traits\ConsumerExternalService;
+use RogerioPereira\EspecializatiMicroserviceCommon\Services\Traits\ConsumeExternalService;
 
 class EvaluationService
 {
-    use ConsumerExternalService;
+    //use ConsumerExternalService;
+    use ConsumeExternalService;
 
     protected $url;
     protected $token;

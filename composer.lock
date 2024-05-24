@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c61ff82cbf0142a401a48a8161e1595a",
+    "content-hash": "e4244b08de50e8f43db13001ce8622e6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2673,6 +2673,44 @@
                 }
             ],
             "time": "2021-09-25T23:10:38+00:00"
+        },
+        {
+            "name": "rogerio-pereira/especializati-microservice-common",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rogerio-pereira/EspecilizaTi_MicroServices_Package.git",
+                "reference": "e247906c564424a183e1d18b6007254ee85ad6ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rogerio-pereira/EspecilizaTi_MicroServices_Package/zipball/e247906c564424a183e1d18b6007254ee85ad6ab",
+                "reference": "e247906c564424a183e1d18b6007254ee85ad6ab",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RogerioPereira\\EspecializatiMicroserviceCommon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Carlos Ferreira",
+                    "email": "carlos@especializati.com.br"
+                }
+            ],
+            "description": "Package Files Utils - Course EspecializaTi/MicroServices",
+            "support": {
+                "issues": "https://github.com/rogerio-pereira/EspecilizaTi_MicroServices_Package/issues",
+                "source": "https://github.com/rogerio-pereira/EspecilizaTi_MicroServices_Package/tree/1.0.0"
+            },
+            "abandoned": true,
+            "time": "2021-08-04T01:25:21+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
