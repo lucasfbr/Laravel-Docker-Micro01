@@ -19,7 +19,8 @@ class Company extends Model
         'email',
         'facebook',
         'instagram',
-        'youtube'
+        'youtube',
+        'image',    
     ];
 
     public function category()
